@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+  <form-beans>
+    <form-bean name="loginForm" type="com.forms.login.LoginForm" />
+    <form-bean name="changeLoginForm" type="com.forms.login.ChangeLoginForm" />
+    <form-bean name="homeForm" type="com.forms.login.HomeForm" />
+    <form-bean name="profileAdminForm" type="com.forms.admin.ProfileAdminForm" />
+    <form-bean name="usersAdminForm" type="com.forms.admin.UserAdminForm" />  
+    <form-bean name="offertAdminForm" type="com.forms.admin.OffertAdminForm" />    
+    <form-bean name="centralAdminForm" type="com.forms.admin.CentralAdminForm" />    
+    <form-bean name="searchClientsForm" type="com.forms.search.SearchClientForm" />
+    <form-bean name="searchForm" type="com.forms.search.SearchForm" />    
+    <form-bean name="offertMainForm" type="com.forms.main.OffertMainForm" />
+  </form-beans>
+  <action-mappings>
+    <action input="/login.do" name="loginForm" path="/login" scope="request" type="com.actions.login.LoginAction" validate="false">
+      <forward name="loginForm" path="/jsp/login/login.jsp" />
+      <forward name="success" path="/home.do" />
+      <forward name="changeLogin" path="/changeLogin.do" />
+    </action>
+    <action input="/changeLogin.do" name="changeLoginForm" path="/changeLogin" scope="request" type="com.actions.login.ChangeLoginAction" validate="false">
+      <forward name="changeLogin" path="/jsp/login/changeLogin.jsp" />
+    </action>
+    <action input="/home.do" name="homeForm" path="/home" scope="request" type="com.actions.login.HomeAction" validate="false">
+      <forward name="home" path="/jsp/login/frameset.jsp" />
+    </action>
+    <action input="/profileAdmin.do" name="profileAdminForm" path="/profileAdmin" scope="request" type="com.actions.admin.ProfileAdminAction" validate="false">
+      <forward name="success" path="/jsp/admin/profileAdmin.jsp" />
+    </action>
+    <action input="/usersAdmin.do" name="usersAdminForm" path="/usersAdmin" type="com.actions.admin.UsersAdminAction" validate="false">
+      <forward name="success" path="/jsp/admin/usersAdmin.jsp" />
+    </action>
+    <action input="/offertAdmin.do" name="offertAdminForm" path="/offertAdmin" type="com.actions.admin.OffertAdminAction" validate="false">
+      <forward name="success" path="/jsp/admin/offertAdmin.jsp" />
+    </action>    
+    <action input="/centralAdmin.do" name="centralAdminForm" path="/centralAdmin" type="com.actions.admin.CentralAdminAction" validate="false">
+      <forward name="success" path="/jsp/admin/centralAdmin.jsp" />
+      <forward name="viewCentral" path="/jsp/admin/viewCentral.jsp" />
+    </action> 
+    <action input="/searchClient.do" name="searchClientsForm" path="/searchClient"  type="com.actions.search.SearchClientAction" validate="false">
+      <forward name="success" path="/jsp/search/searchClient.jsp" />
+      <forward name="searchClientResult" path="/jsp/search/searchClientResult.jsp" />
+      <forward name="viewClienteVIP" path="/jsp/search/viewClienteVIP.jsp" />
+    </action>
+    <action input="/search.do" name="searchForm" path="/search" type="com.actions.search.SearchAction" validate="false">
+      <forward name="success" path="/jsp/search/search.jsp" />
+      <forward name="searchResult" path="/jsp/search/searchResult.jsp" />
+      <forward name="viewPedido" path="/jsp/search/viewPedido.jsp" />
+    </action>    
+    <action input="/offertMain.do" name="offertMainForm" path="/offertMain" type="com.actions.main.OffertMainAction" validate="false">
+      <forward name="success" path="/jsp/main/offertMain.jsp" />
+      <forward name="resultCoverage" path="/jsp/main/resultCoverage.jsp" />
+      <forward name="createOrder" path="/jsp/main/createOrder.jsp" />
+      <forward name="coverage" path="/jsp/main/coverage.jsp" />
+      <forward name="clienteVIP" path="/jsp/main/clienteVIP.jsp" />
+      <forward name="confirmOrder" path="/jsp/main/confirmOrder.jsp" />
+    </action>
+  </action-mappings>
+  <controller debug="0" nocache="false" processorClass="com.util.SessionRequestProcessor" tempDir="/tmp" />
+  <message-resources key="common" parameter="resources.ApplicationResources" />
+  <message-resources key="errors" parameter="resources.ApplicationResources" />
+  <message-resources key="combo" parameter="resources.ApplicationResources" />
+  <message-resources key="validation" parameter="resources.ApplicationResources" />
+</struts-config>

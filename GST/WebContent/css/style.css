@@ -1,0 +1,39 @@
+A            {font-family: arial; font-size: 12px;  color: #008000; text-decoration: none;}
+A:visited    {font-family: arial; font-size: 12px;  color: #008000; text-decoration: none;}
+A:hover      {font-family: arial; font-size: 12px;  color: #000000; text-decoration: none;}
+
+.titular     {font-family: arial; FONT-SIZE: 24px; COLOR: #000000; FONT-WEIGHT: bold; text-align: left;}
+.textotitulo {font-family: arial; font-size: 12px; color: #000000; text-decoration: none;}
+.textocampo  {font-family: arial; font-size: 12px; color: #000000; text-decoration: none;}
+.caja        {font-family: arial; color: #000000; border-style:solid; border-color:#d8d8d8; border-width:1; background:#d1e4d6;}
+.cajaDis     {font-family: arial; color: #000000; border-style:solid; border-color:#d8d8d8; border-width:1; background:##b6deb8;}
+.textopagin  {font-family: arial; font-size: 11px;  color: #ADACAC; font-weight:bold}
+.error       {font-family: Arial; font-size: 12px; color: #008000; text-decoration: none;}
+
+.subseccion  {FONT-FAMILY: arial; FONT-SIZE: 15px; COLOR: #000000; FONT-WEIGHT: bold; TEXT-DECORATION: none; border-bottom:solid 1px #D8D8D8;background-image: url(../images/flecha_subseccion.gif);background-repeat:no-repeat;padding-left:18px;background-position:0px 0px; height:20;}
+.subseccion2 {FONT-FAMILY: arial; FONT-SIZE: 13px; COLOR: #000000; FONT-WEIGHT: bold; TEXT-DECORATION: none; border-bottom:solid 1px #D8D8D8; background-image: url(../images/flecha_subseccion.gif);background-repeat:no-repeat;padding-left:18px;background-position:0px 0px; height:20;}
+.subseccion3 {FONT-FAMILY: arial; FONT-SIZE: 13px; COLOR: #000000; FONT-WEIGHT: bold; TEXT-DECORATION: none;}
+.tablehead   {FONT-FAMILY: arial; FONT-SIZE: 13px; COLOR: #000000; FONT-WEIGHT: bold; TEXT-DECORATION: none; background-color:#D8D8D8; height:20;padding:2px;}
+.tabledata   {font-family: arial; font-size: 13px;  color: #000000; text-decoration: none;}
+
+.errorlogin  {font-family: arial; font-size: 12px; color: #ff0000; text-decoration: none;}
+
+/***** USADOS EN EL MENU *****/
+.clTop    {POSITION: absolute;height:17px;width: 215px; FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: arial, verdana; TEXT-ALIGN: left; TEXT-DECORATION: none;}
+.clSub    {POSITION: absolute;width:219px;top:16px;FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, arial; TEXT-ALIGN: left; TEXT-DECORATION: none;}
+.itemMenu    {FONT-SIZE: 10px; height:15px; COLOR: #000000; FONT-FAMILY: Verdana, arial;TEXT-DECORATION: none}
+#divCont  {LEFT: 3px; VISIBILITY: hidden; WIDTH: 207px; POSITION: absolute; TOP: 30px;}
+
+A.menuf    {POSITION: absolute; FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: arial; TEXT-ALIGN: left; TEXT-DECORATION: none; background-image: url(../images/cubo.gif);background-repeat:no-repeat;padding-left:10px;background-position:0px 0px;}
+A.submenuf {POSITION: absolute; FONT-SIZE: 12px; COLOR: #6C6C6C; FONT-FAMILY: arial; TEXT-ALIGN: left; TEXT-DECORATION: none; background-image: url(../images/cubo2.gif);background-repeat:no-repeat;padding-left:10px;background-position:0px 0px;}
+A.submenuf:visited {POSITION: absolute; FONT-SIZE: 12px; COLOR: #6C6C6C; FONT-FAMILY: arial; TEXT-ALIGN: left; TEXT-DECORATION: none; background-image: url(../images/cubo2.gif);background-repeat:no-repeat;padding-left:10px;background-position:0px 0px;}
+A.submenuf:hover {POSITION: absolute; FONT-SIZE: 12px; COLOR: #008000; FONT-FAMILY: arial; TEXT-ALIGN: left; TEXT-DECORATION: none; background-image: url(../images/cubo2.gif);background-repeat:no-repeat;padding-left:10px;background-position:0px 0px;}
+.vacio    {FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: arial;TEXT-DECORATION: none}
+.linea    {FONT-SIZE: 10px;COLOR: #FFFFFF; background:#FFFFFF; FONT-FAMILY: arial;TEXT-DECORATION: none}
+.linea2   {FONT-SIZE: 10px;COLOR: #FFFFFF; background:#FFFFFF; FONT-FAMILY: arial;TEXT-DECORATION: none}
+
+/***** USADOS EN LA CABECERA *****/
+.fechacabecera {font-family: Arial; font-size: 12px; color: #000000;}
+A.menucabecera { font-family: Arial; font-size: 12px; color: #008000;  text-decoration: none;}
+A.menucabecera:visited { font-family: Arial; font-size: 12px; color: #008000;  text-decoration: none;}
+A.menucabecera:hover { font-family: Arial; font-size: 12px; color: #000000;  text-decoration: none;}
